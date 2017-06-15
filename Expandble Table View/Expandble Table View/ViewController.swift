@@ -66,7 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Members") as UITableViewCell!
             cell?.textLabel?.text = details[section].name[row - 1]
-            cell?.textLabel?.textColor = UIColor.lightGray
+            cell?.textLabel?.textColor = UIColor.darkGray
             return cell!
         }
     }
