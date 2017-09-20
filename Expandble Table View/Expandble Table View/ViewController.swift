@@ -19,9 +19,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         details = [
-            Detail(team: "Avengers", name: ["Abhay", "Abhisek", "Ansiqa", "Ana", "Mia"], isCollapsed: false),
-            Detail(team: "Justice League", name: ["Abhay", "Abhisek", "Ansiqa", "Ana", "Mia"]),
-            Detail(team: "Ninja Turtles", name: ["Abhay", "Abhisek", "Ansiqa", "Ana", "Mia"]),
+            Detail(team: "Marvels", name: ["Ironman", "Deadpool", "Hulk", "Thor", "Doctor Strange"], isCollapsed: false),
+            Detail(team: "Justice League", name: ["Batman", "Wonder Woman", "Flash", "Superman", "Cyborg"]),
+            Detail(team: "Ninja Turtles", name: ["Red", "Voilet", "Yellow", "Green", "Talking Mouse"]),
         ]
         
     
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //
     // MARK: - Event Handlers
     //
-    func toggleCollapse(_ sender: UIButton) {
+    @objc func toggleCollapse(_ sender: UIButton) {
         let section = sender.tag
         let collapsed = details[section].isCollapsed
         
